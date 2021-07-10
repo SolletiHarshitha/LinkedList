@@ -136,6 +136,52 @@ namespace LinkedListImplementation
                 return false;
             }
         }
+
+        public bool Delete(int data)
+        {
+            bool flag = false;
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+                return flag;
+            }
+            else
+            {
+                if (head.data == data)
+                {
+                    head = null;
+                    return flag;
+                }
+                else
+                {
+                    Node temp = head;
+                    while (temp.Next != null)
+                    {
+                        if (temp.Next.data == data)
+                        {
+                            temp.Next = temp.Next.Next;
+                            flag = true;
+                            break;
+                        }
+                        temp = temp.Next;
+                    }
+                    return flag;
+                }
+            }
+        }
+
+        //Method to dtermine size of the linked list
+        public int Size()
+        {
+            int size = 0;
+            Node temp = head;
+            while(temp!=null)
+            {
+                size++;
+                temp = temp.Next;
+            }
+            return size;
+        }
         //Method to display elements
         public void Display()
         {
