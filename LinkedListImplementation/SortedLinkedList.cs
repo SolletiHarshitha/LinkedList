@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedListImplementation
 {
-    class SortedLinkedList
+    public class SortedLinkedList
     {
         internal Node head;
         public SortedLinkedList()

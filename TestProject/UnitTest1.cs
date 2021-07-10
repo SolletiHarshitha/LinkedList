@@ -60,17 +60,16 @@ namespace TestProject
         {
             ///AAA Methodology
             //Arrange
-            LinkedList linkedList = new LinkedList();
+            SortedLinkedList sortedLinkedList = new SortedLinkedList();
 
             //Act
-            linkedList.Append(56);
-            linkedList.Append(70);
-            linkedList.Insert(2, 30);
-            linkedList.Insert(3, 40);
-            linkedList.Delete(40);
+            sortedLinkedList.Add(56);
+            sortedLinkedList.Add(30);
+            sortedLinkedList.Add(40);
+            sortedLinkedList.Add(70);
 
             //Assert
-            Assert.AreEqual(3, linkedList.Size());
+            Assert.AreEqual(4,sortedLinkedList.Size());
         }
     }
 }
