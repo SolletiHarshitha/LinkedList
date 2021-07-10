@@ -137,6 +137,7 @@ namespace LinkedListImplementation
             }
         }
 
+        //Method to delete an element
         public bool Delete(int data)
         {
             bool flag = false;
@@ -170,7 +171,7 @@ namespace LinkedListImplementation
             }
         }
 
-        //Method to dtermine size of the linked list
+        //Method to determine size of the linked list
         public int Size()
         {
             int size = 0;
@@ -182,6 +183,7 @@ namespace LinkedListImplementation
             }
             return size;
         }
+
         //Method to display elements
         public void Display()
         {

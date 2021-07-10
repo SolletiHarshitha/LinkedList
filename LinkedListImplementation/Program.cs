@@ -38,6 +38,7 @@ namespace LinkedListImplementation
                 Console.WriteLine("The element 40 is not found in the list");
             }
 
+            Console.WriteLine("Size of the linked list is : "+linkedList.Size()+"\n");
             //Dispaly linked list 
             linkedList.Display();
         }
