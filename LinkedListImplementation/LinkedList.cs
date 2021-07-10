@@ -37,8 +37,8 @@ namespace LinkedListImplementation
 
         }
 
-        //Method to add elements at last
-        internal void AddAtLast(int data)
+        //Method to append elements 
+        internal void Append(int data)
         {
             Node newNode = new Node(data);
             if (head == null)
