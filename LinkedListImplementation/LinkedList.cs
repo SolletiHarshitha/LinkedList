@@ -12,6 +12,14 @@ namespace LinkedListImplementation
             this.head = null;
         }
 
+        //Method to add elements
+        internal void Add(int data)
+        {
+            Node newNode = new Node(data);
+            newNode.data = data;
+            newNode.Next = head;
+            head = newNode;
+        }
         //Method to add elements at last
        internal void AddAtLast(int data)
         {
