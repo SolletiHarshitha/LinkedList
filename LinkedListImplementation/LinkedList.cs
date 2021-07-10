@@ -20,25 +20,6 @@ namespace LinkedListImplementation
             newNode.Next = head;
             head = newNode;
         }
-        //Method to add elements at last
-       internal void AddAtLast(int data)
-        {
-            Node newNode = new Node(data);
-            if(head==null)
-            {
-                head = newNode;
-            }
-            else
-            {
-                Node temp = new Node(data);
-                temp = head;
-                while(temp.Next!=null)
-                {
-                    temp = temp.Next;
-                }
-                temp.Next = newNode;
-            }
-        }
 
         //Method to add elements at first
         internal void AddAtFirst(int data)
@@ -54,7 +35,27 @@ namespace LinkedListImplementation
                 head = newNode;
             }
 
-        } 
+        }
+
+        //Method to add elements at last
+        internal void AddAtLast(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp = head;
+                while (temp.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = newNode;
+            }
+        }
 
         //Method to display elements
         internal void Display()
