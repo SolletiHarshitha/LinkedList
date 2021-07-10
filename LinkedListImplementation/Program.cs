@@ -8,10 +8,12 @@ namespace LinkedListImplementation
         {
             Console.WriteLine("---------------Linked List--------------------");
             LinkedList linkedList = new LinkedList();
+
             //Adding elements to the list
-            linkedList.AddAtLast(56);
-            linkedList.AddAtLast(30);
-            linkedList.AddAtLast(70);
+            linkedList.AddAtFirst(70);
+            linkedList.AddAtFirst(30);
+            linkedList.AddAtFirst(56);
+
             //Dispaly the list
             linkedList.Display();
         }
