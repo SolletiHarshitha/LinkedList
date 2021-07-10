@@ -15,7 +15,7 @@ namespace LinkedListImplementation
             linkedList.Insert(2,30);
 
             //Delete element
-            linkedList.DeleteAtFirst();
+            linkedList.DeleteAtLast();
 
             //Dispaly the list
             linkedList.Display();

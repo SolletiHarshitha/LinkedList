@@ -93,6 +93,28 @@ namespace LinkedListImplementation
             head = head.Next;
         }
 
+        //Method to delete last element
+        internal void DeleteAtLast()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            else if(head.Next==null)
+            {
+                head = null;
+            }
+            else
+            {
+                Node temp = head;
+                while(temp.Next.Next!=null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = null;
+            }
+        }
+
         //Method to display elements
         internal void Display()
         {
