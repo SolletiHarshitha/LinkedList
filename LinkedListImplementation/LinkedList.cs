@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedListImplementation
 {
-    class LinkedList
+    public class LinkedList
     {
         internal Node head;
         public LinkedList()
@@ -115,6 +115,27 @@ namespace LinkedListImplementation
             }
         }
 
+        //Method to search an element
+        public bool Search(int data)
+        {
+            if(head==null)
+            {
+                return false;
+            }
+            else
+            {
+                Node temp = head;
+                while(temp!=null)
+                {
+                    if(temp.data==data)
+                    {
+                        return true;
+                    }
+                    temp = temp.Next;
+                }
+                return false;
+            }
+        }
         //Method to display elements
         public void Display()
         {
