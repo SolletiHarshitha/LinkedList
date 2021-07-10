@@ -11,7 +11,7 @@ namespace LinkedListImplementation
         {
             this.head = null;
         }
-
+        
         //Method to add elements
         internal void Add(int data)
         {
@@ -57,6 +57,30 @@ namespace LinkedListImplementation
             }
         }
 
+        internal void Insert(int position,int data)
+        {
+            Node newNode = new Node(data);
+            if(position<1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            else if(position==1)
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                while (position > 2)
+                {
+                    temp = temp.Next;
+                    position--;
+                }
+                newNode.Next = temp.Next;
+                temp.Next = newNode;
+            }
+        }
         //Method to display elements
         internal void Display()
         {
