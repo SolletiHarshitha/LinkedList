@@ -21,7 +21,7 @@ namespace LinkedListImplementation
             }
             else
             {
-                Console.WriteLine("The element 56 is found in the list");
+                Console.WriteLine("The element 56 is not found in the list");
             }
 
         }
