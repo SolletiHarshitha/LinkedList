@@ -56,6 +56,7 @@ namespace LinkedListImplementation
                 temp.Next = newNode;
             }
         }
+
         //Method to display elements
         internal void Display()
         {
