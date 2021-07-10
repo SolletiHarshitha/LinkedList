@@ -13,7 +13,7 @@ namespace LinkedListImplementation
         }
 
         //Method to add elements
-        internal void Add(int data)
+        public void Add(int data)
         {
             Node newNode = new Node(data);
             newNode.data = data;
@@ -22,7 +22,7 @@ namespace LinkedListImplementation
         }
         
         //Method to display elements
-        internal void Display()
+        public void Display()
         {
             if(head == null)
                 Console.WriteLine("List is Empty");
